@@ -976,7 +976,6 @@ table tfoot td {
 }
 
 .about .author-name::after {
-  content: "";
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -993,7 +992,7 @@ table tfoot td {
 
 .about p {
   font-size: 16px;
-  margin: 0 0 10px;
+  margin: 0 0 30px;
 }
 
 .content-box {
