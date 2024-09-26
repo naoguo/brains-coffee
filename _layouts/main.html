@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/img/{% if site.author-img %}{{site.author-img}}{% endif %}" alt="{{site.author}}"></a>
+      </div>
+      <div class="author-name">{{site.author}}</div>
+      <p>{{site.about-author}}</p>
+      <section class="contact">
+        <h3 class="contact-title">如何订阅</h3>
+        <a href="https://www.xiaohongshu.com/user/profile/617cf8ba0000000002021c19">小红书</a><br>
+        <a href="https://www.xiaoyuzhoufm.com/podcast/66f301ac2adfe48b83310d49">小宇宙</a><br>
+<!--        <a href="https://music.163.com/#/djradio?id=1213369535">网易云音乐</a><br>-->
+        <a href="https://www.ximalaya.com/album/83729241">喜马拉雅</a><br>
+        <a href="https://podcasts.apple.com/us/podcast/%E9%94%B5%E9%94%B5%E8%84%91%E7%A7%91%E5%AD%A6/id1770371243">Apple Podcasts</a><br>
+<!--        <a href="https://open.spotify.com/show/5SzIqOMQfveOSjsjZA7J2I">Spotify</a><br>-->
+        <a href="https://youtube.com/@brainpod-naoguo?si=SnwjjlbPLXmvkoCz">YouTube</a>
+        <br>
+        <br>
+        <a href="https://www.buymeacoffee.com/naoguo">Buy me a coffee 🥹</a><br>
+        <br>
+        <br>
+      </section>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">如何联系</h3>
+      <ul>
+        {% if site.social-email %}
+        <li class="email"><a href="mailto:{{site.social-email}}"><i class="fa fa-envelope-o"></i></a></li>
+        {% else %}
+          <li><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        {% endif %}
+        {% if site.social-github %}
+          <li class="github"><a href="http://github.com/{{site.social-github}}" target="_blank"><i class="fa fa-github"></i></a></li>
+        {% else %}
+          <li class="github"><a href="http://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        {% endif %}
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>{{site.time | date: '%Y'}} &copy; {{site.author}}</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  {{ content }}
+</div>

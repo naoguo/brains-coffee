@@ -1,0 +1,34 @@
+title: 锵锵脑科学
+description: 一线脑科学科研人讲讲科研聊聊生活
+permalink: ':title/'
+baseurl: "/brains-coffee" # the subpath of your site, e.g. /blog
+url: "http://naoguo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+#site-twitter: #if your site has a twitter account, enter it here
+
+# Author Settings
+author: 锵锵脑科学 # add your name
+author-img: logo.jpg # add your photo
+about-author: 一线脑科学科研人讲讲科研聊聊生活 # add description
+#social-twitter: # add your Twitter handle
+#social-facebook: # add your Facebook handle
+social-github: naoguo # add your Github handle
+#social-linkedin: # add your Linkedin handle
+social-email: naoguo@outlook.com # add your Email address
+
+# Disqus
+#discus-identifier: mr-brown # add your discus identifier
+
+# Tracker
+# analytics: G-M8VFWYK9V8 # Google Analytics
+
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+
+paginate: 8
+paginate_path: "/page/:num"
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
